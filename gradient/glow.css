@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 1rem 2rem;
+    background-color: #161a20;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 10rem;
+    background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+    z-index: -1;
+}
+
+button:hover {
+    z-index: 0;
+    box-shadow: 40px 0 100px #008cff85, -40px 0 100px #e100ffbb;
+}
