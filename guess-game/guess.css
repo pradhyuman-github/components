@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:goldenrod;
+}
+
+h1 {
+    color: black;
+    font-style: italic;
+    font-size: 4rem;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secretnum {
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    font-size: 5rem;
+    padding: 10px;
+}
+.numbox {
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.num {
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    height: 50px;
+    border: 2px solid black;
+    background-color:khaki;
+}
+
+.text {
+    color:darkolivegreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+.clickbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.btn  {
+    width: 10vw;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    background-color:olivedrab;
+}
+
+.btn:hover {   
+    cursor:pointer;
+}
+
+.score-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.score , .highscore {
+    font-size: 2rem;
+}
+
+.mssg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.reset {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 20px 20px;
+}
+
+.again {
+    font-size: 1.5rem;
+    width: 7vw;
+    height: 6vh;
+    border-radius: 10px;
+    background-color: darkolivegreen;
+}
+
+.again:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .again {
+        font-size: 0.8rem;
+        font-weight: bold;
+        width: 16vw;
+        border: 1px solid black;
+    }
+    .text {
+        text-align: center;
+    }
+    .num {
+        font-size: 1.3rem;
+        width: 60vw;
+        height: 6vh;
+    }
+    .btn {
+        font-size: 1.3rem;
+        width: 26vw;
+        border: 1px solid black;
+    }
+    .score-box {
+        flex-direction: column;
+    }
+    .score , .highscore {
+        font-size: 1.3rem;
+    }
+    .mssg {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
