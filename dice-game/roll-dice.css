@@ -1,0 +1,175 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: teal;
+}
+
+html {
+    font-size: 64.5%;
+}
+
+
+.player-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.player-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65vw;
+    background: linear-gradient(-30deg, rgba(2, 71, 17, 0.434), rgb(3, 152, 41));
+    border-radius: 2rem;
+}
+
+.player--active {
+    background-color: rgba(255, 255, 255, 0.112);
+    border-radius: 2rem;
+}
+
+.player{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 40vw;
+    height: 80vh;
+}
+
+.name {
+    font-size: 4rem;
+    color:darkseagreen;
+}
+.score {
+    font-size: 5rem;
+    color: darkseagreen;
+}
+
+.current{
+    background-color: rgb(98, 196, 98);
+    width: 10vw;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.current-label, .current-score {
+    font-size: 2rem;
+}
+
+
+.btn {
+    background-color: rgb(19, 114, 19);
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0 0.4rem 1rem hsla(353, 100%, 8%, .1);
+}
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1rem hsla(353, 100%, 8%, .1);
+    transform: translateY(-0.5rem);
+    transition: 0.5s;
+}
+
+.dice {
+    position: absolute;
+    top: 30%;
+    left: 46.5%;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(5px);
+}
+.hidden {
+    display: none;
+}
+
+.btn--new {
+    position: absolute;
+    top: 15%;
+    left: 45%;
+}
+.btn--roll {
+    position: absolute;
+    bottom: 30%;
+    left: 45%;
+}
+.btn--hold {
+    position: absolute;
+    bottom: 23%;
+    left: 47%;
+    width: 6vw;
+}
+
+.player--winner {
+    background-color: rgba(0, 0, 0, 0.676);
+    border-radius: 2rem;
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .player-container {
+        flex-direction: column;
+        height: 90vh;
+    }
+    .player--active {
+        width: 65vw;
+        height: 40vh;
+    }
+    .player {
+        height: 50vh;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .current {
+        flex-direction: row;
+        width: 28vw;
+        height: 7vh;
+    }
+    .current-label, .current-score {
+        padding: 0.5rem;
+        margin: 0;
+    }
+
+    .score {
+        margin: 0;
+    }
+
+    .dice {
+        width: 20vw;
+        top: 48%;
+        left: 40%;
+    }
+    .btn {
+        border-radius: 0.5rem;
+        height: 4vh;
+    }
+    .btn--new {
+        top: 2%;
+        left: 38%;
+        width: 25vw;    
+    }
+    .btn--hold {
+        bottom: 46%;
+        left: 12%;
+        width: 16vw;
+    }
+    .btn--roll {
+        bottom: 46%;
+        left: 70%;
+        width: 20vw;
+    }
+    .player--winner {
+        width: 65vw;
+    }
+}
