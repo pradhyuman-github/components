@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+    margin: 0;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+a {
+    padding: 14px 18px;
+    background: #111827;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #22d3ee;
+    border: 1px solid #1f2937;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #1f2937;
+    transform: translateX(5px);
+}
