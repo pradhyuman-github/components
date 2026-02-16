@@ -1,6 +1,6 @@
 {
   "name": "password-generator",
-  "homepage": "https://pradhyuman-github.github.io/Components/password-generator/dist",
+  "homepage": "https://pradhyuman-github.github.io/Components/password-generator/dist/index.html",
   "private": true,
   "version": "0.0.0",
   "type": "module",
